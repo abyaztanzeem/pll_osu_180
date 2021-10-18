@@ -1,12 +1,34 @@
-# PLL_osu_180
+# PLL_OSU_180
 The main purpose of this workshop is to design an On-Chip Clock Multiplier (PLL) and implement the layout using open-source EDA tools such as ngspice and Magic on OSU180nm PDK.
 
 ## Section 1 - Introduction and Basics of PLL
 
 #Intellectual Property
 
-#On-Chip Clock Multiplier 
+IP's, also known as Macros, are pre-made logic units that can be used repeatedly and are supplied by different vendors. The IP's are manufactured in such a way that they have the most optimum and highest specifications that meet the market requirements. Hence, IP's can help reduce the time to market for chip manufacturers like Samsung or Intel.
+
+#On-Chip Clock Multiplier (PLL)
+
 What is it?
-Why
+
+An on-chip Clock Multiplier is an IP, that is used to increase (multiply) the frequency of a clock signal coming from a low frequency source (quartz crystal oscillator). 
+
+Why?
+
+There are mainly two types of processors: (i) Synchronous (clock dependent) (ii) Asynchronous (clock independent)
+
+Synchronous processors require clock signals to ensure data signals flows uniformly throughout the chip. Signal flow rate depends on the frequency of the clock signal and by increasing the frequency, we can achieve a higher speed with which the processor can process data/information.
+
 How?
+
+An On-chip clock multiplier is also known as a Phase Locked Loop (PLL), a feedback control system that is used to increase the frequency of a reference clock signal. The diagram below outlines the block diagram of a typical PLL:
+
+<p align="center">
+  <img width="600" height="200" src="https://imgur.com/JAmWoEK"
+</p>
+
+
+
+
+#IP-design Flow
 
