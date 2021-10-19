@@ -31,7 +31,7 @@ Synchronous processors require clock signals to ensure data signals flows unifor
 An On-chip clock multiplier is also known as a Phase Locked Loop (PLL), a feedback control system that is used to increase the frequency of a reference clock signal. The diagram below outlines the block diagram of a typical PLL:
 
 <p align="center">
-  <img width="600" height="250" src="https://i.imgur.com/JAmWoEK.jpg"
+  <img width="600" height="200" src="https://i.imgur.com/JAmWoEK.jpg"
 </p>
   <p align="center">
     Figure: Typical Block diagram of a Phase Locked Loop (PLL)
@@ -39,11 +39,25 @@ An On-chip clock multiplier is also known as a Phase Locked Loop (PLL), a feedba
 
 ### - IP Design Flow
 
-1. Design Specifications - Target frequency (input/output freqs), Jitter, Area Constraints, Duty Cycle etc.
+1. Design Specifications - The specificiations with which the IP should be built. For example, Target frequency (input/output frequencies), Jitter Range, Area Constraints, Duty Cycle etc.
   
-2. Literature Review -  Book names
+2. Literature Review -  Book names: (i) Design of Analog CMOS Integrated Circuits by Behzad Razavi (ii) Design of CMOS Phase-Locked Loops (From Circuit Level to Architecture Level) by Behzad Razavi
   
-3. Architectural Design - VCO Mode and PLL Mode using MUX
+3. Architectural Design - Design the architecture of the IP (PLL) according to the design specifications. A Multiplexer is used to switch between VCO Mode and PLL Mode.
+
+<p align="center">
+  <img width="700" height="300" src="https://i.imgur.com/NSE9cHK.jpg"
+</p>
+  <p align="center">
+    Figure: Architectural diagram of a Phase Locked Loop (PLL)
+</p>
   
-### - Theory and Fundamental Concepts
+### - EDA Tools Used (along with OSU180 Library files)
+
+1. Ngspice
+2. Magic
   
+### - Postlayout Simulation
+
+
+
