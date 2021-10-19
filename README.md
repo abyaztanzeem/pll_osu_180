@@ -13,6 +13,13 @@ IP's, also known as Macros, are pre-made logic units that can be used repeatedly
 
 An on-chip Clock Multiplier is an IP, that is used to increase (multiply) the frequency of a clock signal coming from a low frequency source (quartz crystal oscillator). 
 
+<p align="center">
+  <img width="600" height="250" src="https://i.imgur.com/j4kFVrW.jpg"
+</p>
+  <p align="center">
+    Figure: Clock Multiplier Circuit Diagram
+</p>
+
 #### Why is it used?
 
 There are mainly two types of processors: (i) Synchronous (clock dependent) (ii) Asynchronous (clock independent)
@@ -24,16 +31,19 @@ Synchronous processors require clock signals to ensure data signals flows unifor
 An On-chip clock multiplier is also known as a Phase Locked Loop (PLL), a feedback control system that is used to increase the frequency of a reference clock signal. The diagram below outlines the block diagram of a typical PLL:
 
 <p align="center">
-  <img width="600" height="200" src="https://i.imgur.com/JAmWoEK.jpg"
+  <img width="600" height="250" src="https://i.imgur.com/JAmWoEK.jpg"
+</p>
+  <p align="center">
+    Figure: Typical Block diagram of a Phase Locked Loop (PLL)
 </p>
 
 ### - IP Design Flow
 
-Design Specifications - Target frequency (input/output freqs), Jitter, Area Constraints, Duty Cycle etc.
+1. Design Specifications - Target frequency (input/output freqs), Jitter, Area Constraints, Duty Cycle etc.
   
-Literature Review -  Book names
+2. Literature Review -  Book names
   
-Architectural Design - VCO Mode and PLL Mode using MUX
+3. Architectural Design - VCO Mode and PLL Mode using MUX
   
 ### - Theory and Fundamental Concepts
   
