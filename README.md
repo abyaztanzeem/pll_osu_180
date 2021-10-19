@@ -57,7 +57,72 @@ An On-chip clock multiplier is also known as a Phase Locked Loop (PLL), a feedba
 1. Ngspice
 2. Magic
   
-### - Postlayout Simulation
+### - Postlayout Simulation (using Magic)
 
+#### - Inverter Layout Design
+
+<p align="center">
+  <img width="400" height="600" src="https://i.ibb.co/D5zTZn2/Inverter-Layout.jpg"
+</p>
+  <p align="center">
+    Figure: Layout Design of an Inverter using Magic
+</p>
+
+The above diaagram is the layout representation of an inverter using different metal layers, p/n substrate, n well and contacts.
+
+
+<p align="center">
+  <img width="600" height="200" src="https://i.ibb.co/pJyT12X/Commands-on-Magic.jpg"
+</p>
+  <p align="center">
+    Figure: Commands used to extract the spice netlist from Magic Interface
+</p>
+
+<p align="center">
+  <img width="600" height="400" src="https://i.ibb.co/4RtqJVd/Inverter-Netlist.jpg"
+</p>
+  <p align="center">
+    Figure: Extracted Netlist from Magic
+</p>
+
+By using commands to extract the netlist of the inverter from Magic interface, we are able to get the netlist in our directory and prepare it for simulation in Ngspice.
+
+#### - Phase Frequency Detector Layout Design
+
+
+<p align="center">
+  <img width="400" height="600" src="https://i.ibb.co/nCBdvW1/PFD-Layout.jpg"
+</p>
+  <p align="center">
+    Figure: Layout Design of a PFD using Magic
+</p>
+
+The above diaagram is the layout representation of a PFD using different metal layers, p/n substrate, n well and contacts.
+
+
+<p align="center">
+  <img width="600" height="200" src="https://i.ibb.co/ss4WSmD/PFD-Netlist.jpg"
+</p>
+  <p align="center">
+    Figure: Extracted Netlist from Magic
+</p>
+
+<p align="center">
+  <img width="600" height="400" src="https://i.ibb.co/C1hR1Jr/PFD-Modified-Netlist.jpg"
+</p>
+  <p align="center">
+    Figure: Modified Netlist from Magic for simulation
+</p>
+
+<p align="center">
+  <img width="600" height="400" src="https://i.ibb.co/Wx7sdHc/PFD-Simulation.jpg"
+</p>
+  <p align="center">
+    Figure: Simulation Waveform for PFD
+</p>
+
+By using commands to extract the netlist of the PFD from Magic interface, we are able to get the netlist in our directory and then simulate it in Ngspice.
+
+#### - Voltage Controlled Oscillator Layout Design
 
 
